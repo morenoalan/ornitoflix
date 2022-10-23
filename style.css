@@ -166,17 +166,17 @@ h2{
 
 #headerBarSearchSwitch {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: flex-end;
     align-items: left;
-    width: 1.5em;
+    width: 20px;
     overflow-x: hidden;
     transition-duration: 0.35s;
     /*transition: ease-in-out, width .35s ease-in-out;*/
 }
 
 #headerBarSearchSwitch:hover {
-    width: calc(200px + 1.5em + 3px);
+    width: 230px;
 }
 
 #headerBarSearch {
@@ -184,7 +184,7 @@ h2{
     flex-direction: row;
     align-items: center;
     grid-gap: 3px;
-    float:right;
+    float: right;
 }
 
 #headerBarSearchField {
@@ -214,15 +214,20 @@ h2{
     transform:translate3d(5px,0,0);
 }*/
 
-svg {
+#headerBarSearchButton > svg {
     height: 1.2em;
     fill: white;
     cursor: pointer;
+    transform: scale(2);
 }
 
-
 #headerBarSearchButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
     background-color: transparent;
+    width: 20px;
     border: none;
     outline: none;
 }
