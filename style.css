@@ -1,8 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 :root {
-    --first-dark-color: #0b0b0bFF;
+    --first-dark-color: #0b0b0bff;
+    --second-dark-color: #3f3f3fff;
     --first-green-color:#3cd469ff;
     --first-purple-color: #c359f9ff;
     --second-purple-color: #e7bcfdff;
+    --first-white-color: #FFFFFFFF;
     --logo-font: 'Black Han Sans', sans-serif;
     --first-font: 'Roboto', sans-serif;
     --first-font-bold: 'Roboto@wght:800', sans-serif;
@@ -13,47 +28,49 @@
     --cover-height: 120px;
 }
 
-/* Customizing the rolling bar */
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 12px;
 }
 *::-webkit-scrollbar-track {
-    background: var(--first-dark-color);        /* color of the tracking area */
+    background: var(--first-dark-color);
 }
 *::-webkit-scrollbar-thumb {
-    background-color: #3F3F3FFF;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid var(--first-dark-color);  /* creates padding around scroll thumb */
-}
-/* Works on Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--first-purple-color) var(--first-dark-color);
-}
-
-.unselectable {
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select:none;
-    user-select:none;
-    -o-user-select:none;
+    background-color: var(--second-dark-color);
+    border-radius: 20px;
+    border: 3px solid var(--first-dark-color);
 }
 
 html, body {
     background-color: var(--first-dark-color);
+    color: var(--first-white-color);
 }
 
-/* Loader section settings */
+noscript {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--second-purple-color);
+    font-family: var(--first-font);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.display-none {
+    display: none;
+}
+
 #loader {
-    border: 5px solid white;
+    border: 5px solid var(--first-white-color);
     border-radius: 50%;
     border-top: 5px solid var(--first-purple-color);
     border-right: 5px solid var(--first-purple-color);
     width: 70px;
     height: 70px;
     animation: spin 1s linear infinite;
-
     position: absolute;
     top: 0;
     bottom: 0;
@@ -62,418 +79,6 @@ html, body {
     margin: auto;
 }
 
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-body{
-    margin: auto;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    align-items: left;
-}
-
-main {
-    margin: auto;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
-
-h1 {
-    color: var(--first-purple-color);
-    text-shadow: #9607deff 0.05em 0em 0.2em,
-                black -0.05em 0.1em 0.2em,
-                #ffffff33 0em 0em 0.4em;
-    font-family: var(--logo-font);
-    font-size:30px;
-    font-weight:lighter;
-    padding:0;
-    margin:0;
-}
-
-h2{
-    color: white;
-    text-shadow: black -0.05em 0.05em 0.1em;
-    font-family: var(--first-font);
-    font-size:11px;
-    letter-spacing: 1px;
-    padding:0;
-}
-
-.floatingMascot {
-    margin-top: -0.8em;
-    width:80px;
-    height:80px;
-    -webkit-filter: drop-shadow(black -0.1em 0.25em 0.2em);
-    filter: drop-shadow(black -0.1em 0.25em 0.2em);
-    position: relative;
-    animation: mymove 2.3s infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
-
-@keyframes mymove {
-    from {top: 0.7em;}
-    to {top: 0em;
-        -webkit-filter: drop-shadow(black -0.17em 0.6em 0.23em);
-        filter: drop-shadow(black -0.17em 0.6em 0.23em);
-    }
-}
-
-#header, #headerBarLeft, #headerBarRight {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#header {
-    background-color: #000000dd;/*#3cd46922;#00000055;*/
-    box-shadow: black 0em 0.1em 1em;
-    margin: 0px;
-    justify-content: space-between;
-    z-index: 100100 !important;
-
-    /*always visible top menu: */
-    position: -webkit-sticky; /* Required to working on Safari */
-    position: sticky;
-    top: 0;
-}
-
-#headerBarLeft, #headerBarRight {
-    margin: 5px 20px 5px 15px;
-    align-items: center;
-    grid-gap: 10px;
-    vertical-align: baseline;
-}
-
-#headerBarLogo{
-    display: inline;
-    min-width: max-content;
-}
-
-#headerBarMenu {
-    display: inline;
-    min-width: max-content;
-    margin-left: 20px;
-}
-
-#headerBarSearchSwitch {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: left;
-    width: 20px;
-    overflow: hidden;
-    transition-duration: 0.35s;
-    /*transition: ease-in-out, width .35s ease-in-out;*/
-}
-
-#headerBarSearchSwitch:hover {
-    width: 230px;
-}
-
-#headerBarSearchSwitch:target {
-    width: 230px;
-
-}
-
-#headerBarSearch {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-gap: 3px;
-    float: right;
-}
-
-#headerBarSearchField {
-    background-color: #323232FF;
-    letter-spacing:1px;
-    color: white;
-    font-family: 'Roboto@wght:500', sans-serif;
-    font-weight: 500;
-    font-size: 0.85em;
-    outline: none;
-    border: none;
-    border-radius: 0.8em;
-    height: 1.8em;
-    width: 200px;
-    text-indent: 5px;
-}
-
-#headerBarSearchField::placeholder {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing:0px;
-    font-weight: lighter;
-    color: #ffffff66;
-
-}
-/* text-indent above changed this placeholder case also, so it was dismissed.*//*
-#headerBarSearchField::-webkit-input-placeholder {
-    transform:translate3d(5px,0,0);
-}*/
-
-#headerBarSearchButton > svg {
-    height: 1.2em;
-    fill: white;
-    cursor: pointer;
-    transform: scale(2);
-}
-
-#headerBarSearchButton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: transparent;
-    width: 20px;
-    border: none;
-    outline: none;
-}
-
-#headerBarUsername {
-    display: inline;
-    min-width: max-content;
-}
-
-#headerBarProfile {
-    display: inline;
-    min-width: max-content;
-    width: 40px;
-    height: 40px;
-    background-color: #3cd469ff;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#comSection {
-    width: 100vw;
-    height: 35px;
-}
-
-.mediaLine {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.mediaTopic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -10px;
-    height: 20px;
-    overflow-y: hidden;
-}
-
-.mediaTopicName {
-    margin-left: 20px;
-}
-
-.mediaTopicLength {
-    margin-top: 6px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: bottom;
-    grid-gap: 6px;
-}
-
-.mediaTopicLengthRound {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: #FFFFFF66;
-}
-
-.mediaTopicLengthRound:first-child {
-    background-color: white;
-}
-
-.mediaCarousel {
-    background-color:transparent;
-    width: var(--shelf-width);
-    height: var(--shelf-heigh);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    top:-0.7em;
-    overflow: hidden;
-    resize: none;
-    position:relative;
-    /*right: 12px;*/
-}
-
-.mediaShelf {
-    /* Dragger doesn't work with this margins.
-    margin-left: 20px;
-    margin-right: 20px;
-    */
-
-    /* Aparently only works if the element's style/CSS is set with position: absolute; */
-    position: absolute;
-
-    background-color: transparent;
-    width: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    left:0.5rem;
-    align-items: center;
-    grid-column-gap: 0.2em;
-}
-
-.mediaShield {
-    width: var(--cover-width);
-    height: var(--cover-height);
-    border: none;
-    border-radius: 0%;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    transition: 0.1s;
-    justify-content: bottom;
-}
-
-.mediaShield:hover {
-    transform: scale(1.1);
-    z-index: 100000 !important;
-    grid-column-gap: 0.2em;
-    box-shadow: black 0em 0em 0.5em;
-}
-
-.mediaCover {
-    color: #FFFFFF66;
-    text-align: center;
-    width: var(--cover-width);
-    height: var(--cover-height);
-    background-size: cover;
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
-
-.mediaInfo {
-    background-color: transparent;
-    text-align: left;
-    position: absolute;
-    text-align: bottom;
-    bottom: 0.2em;
-    left: 0.5em;
-    right: 0.5em;
-}
-
-h3 {
-    color: white;
-    font-family: 'Roboto@wght:600', sans-serif;
-    font-weight: 600;
-    font-size:0.7em;
-}
-
-.mediaInfo > h3 {
-    /*highlighter effect*/
-    box-shadow: 7px 0 0 0 #000000bb; /*-2px 0 0 0 #000;*/
-    background: #000000bb;
-    display: inline;
-
-    /* Inside Outline *//*
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-fill-color: white;*/
-    /* Outside Outline *//*
-    -webkit-text-stroke: 2px black;
-    text-shadow: black -0.05em 0.05em 0.01em,
-                black 0.05em -0.05em 0.01em,
-                black 0.05em 0.05em 0.01em,
-                black -0.05em -0.05em 0.01em;*/
-}
-
-.mediaInfoYear {
-    color: white;
-    font-family: 'Roboto@wght:900', sans-serif;
-    font-size:0.6em;
-    font-weight: 900;
-    white-space: wrap;
-    resize: none;
-}
-
-.mediaInfoTitle {
-    font-family: 'Roboto@wght:600', sans-serif;
-    font-weight: 600;
-    font-size: 0.9em;
-}
-
-.mediaInfoDescription {
-    font-family: 'Roboto@wght:500', sans-serif;
-    font-weight: 500;
-    font-size:0.6em;
-    color: white;
-    text-transform: uppercase;
-}
-
-.mediaToLeft, .mediaToRight {
-    background-color: transparent;
-    border: none;
-    height: var(--cover-height);
-    position: absolute;
-    text-align: center;
-    justify-content: center;
-    font-family: var(--first-font);
-    font-size: 50px;
-    color: #FFFFFF44;
-    font-weight: lighter;
-    transition: font-size 0.1s;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    outline: none;
-    z-index: 100010 !important;
-}
-.mediaToLeft {
-    left: 0;
-}
-.mediaToRight {
-    right: 0;
-}
-.mediaToLeft:hover, .mediaToRight:hover {
-    color: #FFFFFFAA;
-}
-
-
-footer {
-    background-color: #000000dd;
-    box-shadow: black 0em -0.1em 1em;
-    position: relative;
-    height: 200px;
-    margin-bottom:0;
-    bottom: 0;
-    min-width: var(--shelf-width);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*Setting for mobile version*/
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: var(--first-green-color);
-    }
-}
-
-/* Not visible div that contains all pages */
-/* It's necessary put this style into the tag to doesn't load its contents */
-#book {
-    display: none;
+ul {
+    list-style-type: none;
 }
