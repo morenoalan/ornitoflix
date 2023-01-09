@@ -45,6 +45,14 @@ html, body {
     color: var(--first-white-color);
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+
 noscript {
     display: flex;
     flex-direction: row;
@@ -78,7 +86,39 @@ noscript {
     right: 0;
     margin: auto;
 }
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 ul {
     list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.floatingMascot {
+    margin-top: -0.8em;
+    width:80px;
+    height:80px;
+    -webkit-filter: drop-shadow(black -0.1em 0.25em 0.2em);
+    filter: drop-shadow(black -0.1em 0.25em 0.2em);
+    position: relative;
+    animation: mymove 2.3s infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes mymove {
+    from {top: 0.7em;}
+    to {top: 0em;
+        -webkit-filter: drop-shadow(black -0.17em 0.6em 0.23em);
+        filter: drop-shadow(black -0.17em 0.6em 0.23em);
+    }
 }
