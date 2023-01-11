@@ -51,6 +51,10 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     overflow-x: hidden;
+    font-family: var(--first-font), sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--first-white-color);
 }
 
 noscript {
@@ -159,4 +163,18 @@ main {
     display: inline;
     min-width: max-content;
     margin-left: 20px;
+}
+
+#navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#navBar li {
+    margin-right: 10px;
+}
+#navBar a {
+    text-decoration: none;
+    color: var(--first-white-color);
 }
