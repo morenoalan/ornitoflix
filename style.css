@@ -137,7 +137,10 @@ main {
     background-color: #000000dd;
     box-shadow: black 0em 0.1em 1em;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     z-index: 100100 !important;
 
     /*always visible top menu: */
