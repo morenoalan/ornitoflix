@@ -138,6 +138,16 @@ main {
     min-width: max-content;
 }
 
+#headerBarLogo h1 {
+    color: var(--first-purple-color);
+    text-shadow: #9607deff 0.05em 0em 0.2em,
+                black -0.05em 0.1em 0.2em,
+                #ffffff33 0em 0em 0.4em;
+    font-family: var(--logo-font);
+    font-size:30px;
+    font-weight:lighter;
+}
+
 #headerBarMenu {
     display: inline;
     min-width: max-content;
