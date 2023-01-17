@@ -178,6 +178,11 @@ header a {
     overflow: hidden;
 }
 
+main > h2 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
 #footer {
     display: flex;
     flex-direction: column;
