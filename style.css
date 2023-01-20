@@ -213,6 +213,14 @@ header a {
     overflow: hidden;
 }
 
+#comSection {
+    margin-top: 10px;
+    align-self: center;
+    width: 728px;
+    height: 90px;
+    background-color: var(--first-green-color);
+}
+
 main > h2 {
     margin-top: 10px;
     margin-left: 20px;
