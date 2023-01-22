@@ -216,8 +216,13 @@ header a {
 #bannerSection {
     margin-top: 10px;
     align-self: center;
+    /*
     width: 728px;
     height: 90px;
+    */
+    width: 90vw;
+    height: 40vh;
+    border-radius: 10px;
     background-color: var(--first-green-color);
 }
 
