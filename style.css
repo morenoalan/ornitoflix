@@ -214,6 +214,10 @@ header a {
 }
 
 #bannerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 10px;
     align-self: center;
     /*
@@ -224,6 +228,20 @@ header a {
     height: 40vh;
     border-radius: 10px;
     background-color: var(--first-green-color);
+}
+#bannerSection > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 60px;
+}
+#bannerSection li {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--first-white-color);
 }
 
 main > h2 {
