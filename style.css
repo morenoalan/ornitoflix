@@ -204,13 +204,53 @@ header a {
     margin-right: 5px;
 }
 
-#headerBarProfile {
+#headerBarProfile > a {
     min-width: max-content;
     width: 40px;
     height: 40px;
     background-color: var(--first-green-color);
     border-radius: 50%;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+.menu {
+    display: flex;
+}
+.menu > li {
+    position: relative;
+}
+.menu > li a {
+    padding: 17px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+}
+.menu > li:hover {
+    background: #1d52ff;
+}
+.menu:hover > .submenu,
+.submenu > li:hover > .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    /*left: 0;*/
+    background: #3276fb;
+    min-width: 110%;
+}
+.submenu li:hover {
+    background: #174fbe;
+}
+.submenu li {
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+.submenu li .submenu {
+    top: 0;
+    left: 100%;
 }
 
 #bannerSection {
