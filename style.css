@@ -212,27 +212,27 @@ header a {
     border-radius: 50%;
     /*overflow: hidden;*/
 }
-.menu {
+.menuProfile {
     display: flex;
 }
-.menu > li {
+.menuProfile > li {
     position: relative;
 }
-.menu > li a {
+.menuProfile > li a {
     padding: 17px;
     color: white;
     font-size: 14px;
     text-decoration: none;
     display: block;
 }
-.menu > li:hover {
+.menuProfile > li:hover {
     background: #1d52ff;
 }
-.menu:hover > .submenu,
-.submenu > li:hover > .submenu {
+.menuProfile:hover > .submenuProfile,
+.submenuProfile > li:hover > .submenuProfile {
     display: block;
 }
-.submenu {
+.submenuProfile {
     display: none;
     position: absolute;
     top: 50px;
@@ -240,15 +240,15 @@ header a {
     background: #3276fb;
     min-width: 110%;
 }
-.submenu li:hover {
+.submenuProfile li:hover {
     background: #174fbe;
 }
-.submenu li {
+.submenuProfile li {
     position: relative;
     width: 200px;
     height: 50px;
 }
-.submenu li .submenu {
+.submenuProfile li .submenuProfile {
     top: 0;
     left: 100%;
 }
