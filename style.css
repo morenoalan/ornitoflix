@@ -268,16 +268,24 @@ header a {
     height: 40vh;
     border-radius: 10px;
     background-color: var(--first-green-color);
+    overflow: hidden;
 }
-#bannerSection > ul {
+#bannerSection > ul:first-child {
+    width: 90vw;
+    height: 40vh;
+    background-color: pink;
+    overflow: visible;
+}
+#bannerSection > ul:last-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
     width: 60px;
+    background-color: transparent;
 }
-#bannerSection li,
+#bannerSection > ul:last-child > li,
 .buttonBanner {
     height: 10px;
     width: 10px;
