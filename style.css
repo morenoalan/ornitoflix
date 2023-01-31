@@ -256,7 +256,7 @@ header a {
 #bannerSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 10px;
     align-self: center;
@@ -271,9 +271,12 @@ header a {
     overflow: hidden;
 }
 #bannerSection > ul:first-child {
+    overflow: visible;
+}
+#bannerSection > ul:first-child > li {
     width: 90vw;
     height: 40vh;
-    background-color: pink;
+    background-color: var(--first-purple-color);
     overflow: visible;
 }
 #bannerSection > ul:last-child {
@@ -281,18 +284,21 @@ header a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    position: relative;
+    bottom: 25px;
     width: 60px;
     background-color: transparent;
 }
-#bannerSection > ul:last-child > li,
-.buttonBanner {
+#bannerSection > ul:last-child > li {
     height: 10px;
     width: 10px;
     border-radius: 50%;
     background-color: var(--first-white-color);
 }
 .buttonBanner {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     cursor: pointer;
 }
 
