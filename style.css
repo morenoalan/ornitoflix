@@ -286,23 +286,20 @@ header a {
     align-items: center;
     position: relative;
     bottom: 25px;
-    width: 60px;
+    width: 90px;
     background-color: transparent;
 }
 #bannerSection > ul:last-child > li {
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     overflow: hidden;
-    margin:0;
-    background-color: var(--first-white-color);
 }
 .buttonBanner {
-    margin: 0;
     height: 100%;
     width: 100%;
     cursor: pointer;
-    background-color: red;
+    background-color: #ffffff55;
 }
 
 main > h2 {
