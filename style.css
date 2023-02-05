@@ -310,12 +310,13 @@ main > h2 {
 #book, #home-page, main {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: transparent;
 }
 .shelf {
-    height: 30%;
+    height: 25vh;
     width: 100%;
     background-color: blue;
+    margin-bottom: 2vh;
 }
 
 #footer {
