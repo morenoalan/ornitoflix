@@ -319,6 +319,20 @@ main > h2 {
     margin-bottom: 2vh;
 }
 
+.mediaCarousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mediaCarousel > li {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-left: 10px;
+}
+
 #footer {
     display: flex;
     flex-direction: column;
