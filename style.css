@@ -327,7 +327,7 @@ main > h2 {
 }
 
 .mediaCarousel > li {
-    height: 100px;
+    height: 10vh;
     width: 100px;
     background-color: green;
     margin-left: 10px;
