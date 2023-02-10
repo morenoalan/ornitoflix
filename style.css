@@ -313,12 +313,22 @@ main > h2 {
     background-color: transparent;
 }
 .shelf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 25vh;
     width: 100%;
     background-color: blue;
     margin-bottom: 2vh;
 }
-
+.shelfDirections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .mediaCarousel {
     display: flex;
     flex-direction: row;
