@@ -328,7 +328,21 @@ main > h2 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: absolute;
+    margin-top: 3vh;
 }
+.shelfDirections button {
+    height: 22vh;
+    font-family: var(--logo-font);
+    font-size: 10vh;
+    background-color: transparent;
+    color: #ffffff22;
+    cursor: pointer;
+}
+.shelfDirections button:hover {
+    color: #ffffff55;
+}
+
 .mediaCarousel {
     display: flex;
     flex-direction: row;
