@@ -336,11 +336,11 @@ main > h2 {
     font-family: var(--logo-font);
     font-size: 10vh;
     background-color: transparent;
-    color: #ffffff22;
+    color: #ffffff55;
     cursor: pointer;
 }
 .shelfDirections button:hover {
-    color: #ffffff55;
+    color: #ffffff99;
 }
 
 .mediaCarousel {
@@ -351,8 +351,8 @@ main > h2 {
 }
 
 .mediaCarousel > li {
-    height: 10vh;
-    width: 100px;
+    height: 20vh;
+    width: 30vh;
     background-color: green;
     margin-left: 10px;
 }
