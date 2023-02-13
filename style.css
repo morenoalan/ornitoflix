@@ -333,6 +333,7 @@ main > h2 {
 }
 .shelfDirections button {
     height: 22vh;
+    width: 5vh;
     font-family: var(--logo-font);
     font-size: 10vh;
     background-color: transparent;
@@ -340,6 +341,7 @@ main > h2 {
     cursor: pointer;
 }
 .shelfDirections button:hover {
+    background-color: #ffffff55;
     color: #ffffff99;
 }
 
@@ -348,13 +350,14 @@ main > h2 {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 6.5vh;
 }
 
 .mediaCarousel > li {
     height: 20vh;
     width: 30vh;
     background-color: green;
-    margin-left: 10px;
+    margin-right: 1.5vh;
 }
 
 #footer {
