@@ -322,6 +322,13 @@ main > h2 {
     background-color: blue;
     margin-bottom: 2vh;
 }
+.shelf .mediaTopic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
 .shelfDirections {
     display: flex;
     flex-direction: row;
@@ -354,7 +361,7 @@ main > h2 {
 }
 
 .mediaCarousel > li {
-    height: 20vh;
+    height: 22vh;
     width: 30vh;
     background-color: green;
     margin-right: 1.5vh;
