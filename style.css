@@ -23,7 +23,7 @@
     --first-font: 'Roboto', sans-serif;
     --first-font-bold: 'Roboto@wght:800', sans-serif;
     --first-font-bolder: 'Roboto@wght:900', sans-serif;
-    --shelf-width: calc(100vw - 12px); /*Total minus scrollbar width*/
+    --page-width: calc(100vw - 12px); /*Total minus scrollbar width*/
     --shelf-heigh: 160px;
     --cover-width: 200px;
     --cover-height: 120px;
@@ -285,17 +285,18 @@ header a {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    bottom: 25px;
-    width: 90px;
+    bottom: 4vh;
+    width: 15vh;
     background-color: transparent;
 }
 #bannerSection > ul:last-child > li {
-    height: 15px;
-    width: 15px;
+    height: 2.5vh;
+    width: 2.5vh;
     border-radius: 50%;
     overflow: hidden;
 }
 .buttonBanner {
+    position: relative;
     height: 100%;
     width: 100%;
     cursor: pointer;
@@ -328,6 +329,23 @@ main > h2 {
     justify-content: space-between;
     align-items: center;
     height: 5vh;
+    width: calc(var(--page-width) - 2 * 6.5vh);
+    margin-left: 6.5vh;
+    margin-right: 6.5vh;
+}
+.shelf .mediaTopicLength {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.shelf .mediaTopicLengthRound {
+    --mTLR-measure: 1.5vh;
+    height: var(--mTLR-measure);
+    width: var(--mTLR-measure);
+    border-radius: 50%;
+    background-color: #ffffff55;
+    margin-left: calc(var(--mTLR-measure) * 0.5);
 }
 .shelfDirections {
     display: flex;
