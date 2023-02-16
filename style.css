@@ -393,6 +393,16 @@ main > h2 {
     width: 30vh;
     background-color: red;
 }
+.mediaCover > figcaption {
+    font-family: var(--first-font);
+    font-weight: 500;
+    font-size: 2.2vh;
+}
+.mediaCover > p {
+    font-family: var(--first-font);
+    font-weight: 400;
+    font-size: 1.8vh;
+}
 
 #footer {
     display: flex;
