@@ -369,7 +369,6 @@ main > h2 {
     background-color: #ffffff55;
     color: #ffffff99;
 }
-
 .mediaCarousel {
     display: flex;
     flex-direction: row;
@@ -377,12 +376,22 @@ main > h2 {
     align-items: center;
     margin-left: 6.5vh;
 }
-
 .mediaCarousel > li {
     height: 22vh;
     width: 30vh;
     background-color: green;
     margin-right: 1.5vh;
+}
+.mediaCover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.mediaCover > img {
+    height: 17vh;
+    width: 30vh;
+    background-color: red;
 }
 
 #footer {
