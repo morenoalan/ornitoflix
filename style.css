@@ -277,6 +277,7 @@ header a {
     border-radius: 10px;
     background-color: var(--first-green-color);
     overflow: hidden;
+    margin-bottom: 1vh;
 }
 #bannerSection > ul:first-child {
     display: flex;
@@ -328,7 +329,7 @@ header a {
     height: 25vh;
     width: 100%;
     background-color: blue;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 .shelf .mediaTopic {
     display: flex;
