@@ -277,7 +277,7 @@ header a {
     border-radius: 10px;
     background-color: var(--first-green-color);
     overflow: hidden;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 #bannerSection > ul:first-child {
     display: flex;
@@ -328,8 +328,8 @@ header a {
     align-items: flex-start;
     height: 25vh;
     width: 100%;
-    background-color: blue;
-    margin-bottom: 1vh;
+    background-color: transparent;
+    margin-bottom: 2vh;
 }
 .shelf .mediaTopic {
     display: flex;
@@ -392,7 +392,7 @@ header a {
 .mediaCarousel > li {
     height: 22vh;
     width: 30vh;
-    background-color: green;
+    background-color: transparent;
     margin-right: 1.5vh;
 }
 .mediaCover {
@@ -400,11 +400,12 @@ header a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    cursor: pointer;
 }
 .mediaCover > img {
     height: 17vh;
     width: 30vh;
-    background-color: red;
+    background-color: gray;
 }
 .mediaCover > figcaption {
     font-family: var(--first-font);
