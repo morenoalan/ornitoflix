@@ -101,7 +101,7 @@ noscript {
     }
 }
 
-ul {
+ul, ol {
     list-style-type: none;
 }
 
@@ -406,6 +406,22 @@ header a {
     height: 17vh;
     width: 30vh;
     background-color: gray;
+}
+.mediaCover ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1vh;
+}
+.mediaCover ol img {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: red;
+}
+.mediaCover ol li:last-child {
+    margin-left: 1vh;
 }
 .mediaCover > figcaption {
     font-family: var(--first-font);
