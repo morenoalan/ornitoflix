@@ -233,6 +233,12 @@ header a {
     text-decoration: none;
     display: block;
 }
+.menuProfile > li:last-child img {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    background-color: green;
+}
 .menuProfile > li:hover {
     background: #1d52ff;
 }
