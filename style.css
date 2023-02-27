@@ -273,6 +273,17 @@ header a {
     left: 100%;
 }
 
+.searchSection,
+.searchSectionInput {
+    height: 4vh;
+    width: var(--page-width);
+    background-color: #ffffff11;
+    color: white;
+}
+.searchSectionInput {
+    text-indent: 3vh;
+}
+
 #bannerSection {
     display: flex;
     flex-direction: column;
