@@ -275,13 +275,14 @@ header a {
 
 .searchSection,
 .searchSectionInput {
-    height: 4vh;
+    height: 7vh;
     width: var(--page-width);
     background-color: #ffffff11;
     color: white;
 }
 .searchSectionInput {
     text-indent: 3vh;
+    font-size: 4vh;
 }
 
 #bannerSection {
