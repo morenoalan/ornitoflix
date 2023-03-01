@@ -331,6 +331,7 @@ header a {
     width: 2.5vh;
     border-radius: 50%;
     overflow: hidden;
+    background-color: blue;
 }
 .buttonBanner {
     position: relative;
