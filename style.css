@@ -323,12 +323,13 @@ header a {
     align-items: center;
     position: relative;
     bottom: 4vh;
-    width: 15vh;
     background-color: transparent;
+    --bB-measure: 1.5vh;
+    width: calc(6 * var(--bB-measure));
 }
 #bannerSection > ul:last-child > li {
-    height: 2.5vh;
-    width: 2.5vh;
+    height: var(--bB-measure);
+    width: var(--bB-measure);;
     border-radius: 50%;
     overflow: hidden;
     background-color: blue;
