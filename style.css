@@ -330,14 +330,15 @@ header a {
 #bannerSection > ul:last-child > li {
     height: var(--bB-measure);
     width: var(--bB-measure);;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .buttonBanner {
-    position: relative;
     height: 100%;
     width: 100%;
+    border-radius: 50%;
     cursor: pointer;
     background-color: #ffffff55;
 }
