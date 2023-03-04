@@ -316,18 +316,25 @@ header a {
     background-color: var(--first-purple-color);
     overflow: visible;
 }
-#bannerSection > ul:last-child {
+#bannerSection > ul:last-child,
+.mediaTopicLength {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    bottom: 4vh;
     background-color: transparent;
     --bB-measure: 1.5vh;
     width: calc(6 * var(--bB-measure));
 }
-#bannerSection > ul:last-child > li {
+#bannerSection > ul:last-child {
+    position: relative;
+    bottom: 4vh;
+}
+.mediaTopicLength {
+    margin-left: calc(var(--mTLR-measure) * 0.5);
+}
+#bannerSection > ul:last-child > li,
+.mediaTopicLength > li {
     height: var(--bB-measure);
     width: var(--bB-measure);;
     display: flex;
@@ -335,7 +342,8 @@ header a {
     justify-content: center;
     align-items: center;
 }
-.buttonBanner {
+.buttonBanner,
+.buttonMediaTopicLength {
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -372,20 +380,6 @@ header a {
     font-family: var(--first-font);
     font-weight: 500;
     font-size: 2.2vh;
-}
-.shelf .mediaTopicLength {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-.shelf .mediaTopicLengthRound {
-    --mTLR-measure: 1.5vh;
-    height: var(--mTLR-measure);
-    width: var(--mTLR-measure);
-    border-radius: 50%;
-    background-color: #ffffff55;
-    margin-left: calc(var(--mTLR-measure) * 0.5);
 }
 .shelfDirections {
     display: flex;
