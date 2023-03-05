@@ -361,9 +361,9 @@ header a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 25vh;
+    height: 30vh;
     width: 100%;
-    background-color: transparent;
+    background-color: purple;
     margin-bottom: 2vh;
 }
 .shelf .mediaTopic {
@@ -371,7 +371,7 @@ header a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 6vh;
     width: calc(var(--page-width) - 2 * 6.5vh);
     margin-left: 6.5vh;
     margin-right: 6.5vh;
@@ -388,10 +388,10 @@ header a {
     align-items: center;
     width: 100%;
     position: absolute;
-    margin-top: 3vh;
+    margin-top: 0;
 }
 .shelfDirections button {
-    height: 22vh;
+    height: 30vh;
     width: 5vh;
     font-family: var(--logo-font);
     font-size: 10vh;
@@ -444,10 +444,11 @@ header a {
 .mediaCover ol li:last-child {
     margin-left: 1vh;
 }
-.mediaCover > figcaption {
+.mediaCover figcaption {
     font-family: var(--first-font);
     font-weight: 500;
     font-size: 2.2vh;
+    background-color: blue;
 }
 .mediaCover > p {
     font-family: var(--first-font);
