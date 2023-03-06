@@ -363,7 +363,7 @@ header a {
     align-items: flex-start;
     height: 30vh;
     width: 100%;
-    background-color: purple;
+    background-color: transparent;
     margin-bottom: 2vh;
 }
 .shelf .mediaTopic {
