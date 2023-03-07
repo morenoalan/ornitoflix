@@ -450,10 +450,11 @@ header a {
     font-size: 2.2vh;
     background-color: blue;
 }
-.mediaCover > p {
+.mediaCover p {
     font-family: var(--first-font);
     font-weight: 400;
     font-size: 1.8vh;
+    background-color: magenta;
 }
 
 #footer {
