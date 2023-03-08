@@ -283,6 +283,7 @@ header a {
 .searchSectionInput {
     text-indent: 3vh;
     font-size: 4vh;
+    font-weight: 600;
 }
 
 #bannerSection {
