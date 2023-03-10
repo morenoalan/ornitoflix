@@ -193,7 +193,7 @@ header a {
     width: 20px;
 }
 #headerBarSearchButton > svg {
-    height: 20px;
+    height: 7vh;
     fill: var(--first-white-color);
     cursor: pointer;
     transform: scale(1.3);
