@@ -121,7 +121,7 @@ main {
 #header {
     background-color: #000000dd;
     box-shadow: black 0em 0.1em 1em;
-    margin: 0px;
+    margin: 0vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -135,10 +135,10 @@ main {
 }
 
 #headerBarLeft, #headerBarRight {
-    margin: 5px 20px 5px 15px;
+    margin: 1vh 7vh 1vh 5vh;
     justify-content: center;
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 3vh;
     vertical-align: baseline;
 }
 
@@ -160,7 +160,7 @@ main {
 #headerBarMenu {
     display: inline;
     min-width: max-content;
-    margin-left: 20px;
+    margin-left: 7vh;
 }
 
 #navBar ul {
@@ -170,7 +170,7 @@ main {
     align-items: center;
 }
 #navBar li {
-    margin-right: 15px;
+    margin-right: 5vh;
 }
 
 header a {
