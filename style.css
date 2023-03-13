@@ -278,7 +278,7 @@ header a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 2vh;
     align-self: center;
     /*
     width: 728px;
@@ -286,7 +286,7 @@ header a {
     */
     width: 90vw;
     height: 40vh;
-    border-radius: 10px;
+    border-radius: 2vh;
     background-color: var(--first-green-color);
     overflow: hidden;
     margin-bottom: 2vh;
