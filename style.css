@@ -423,6 +423,9 @@ header a {
     align-items: flex-start;
     margin-top: 1vh;
 }
+.mediaCover ol a {
+    cursor: pointer;
+}
 .mediaCover ol img {
     height: 4vh;
     width: 4vh;
