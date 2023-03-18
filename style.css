@@ -369,14 +369,20 @@ header a {
     font-weight: 500;
     font-size: 2.2vh;
 }
+.shelfDirectionAndContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 .shelfDirections {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
-    position: absolute;
     margin-top: 0;
+    background-color: red;;
 }
 .shelfDirections button {
     height: 30vh;
@@ -391,12 +397,16 @@ header a {
     background-color: #ffffff55;
     color: #ffffff99;
 }
+.shelfDirectionRight {
+    position: absolute;
+    margin-left: 0;
+}
 .mediaCarousel {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 6.5vh;
+    margin-left: 1.5vh;
 }
 .mediaCarousel > li {
     height: 22vh;
