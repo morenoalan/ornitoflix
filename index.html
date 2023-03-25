@@ -148,27 +148,23 @@
             <main>
                 <h2 class='display-none'>HOME</h2>
                 <section class='shelf'>
-                    <ul class='mediaTopic'>
-                        <li class='mediaTopicSubject'>
-                            <p>Tópico</p>
-                        </li>
-                        <li>
-                            <ul class='mediaTopicLength'>
-                                <li>
-                                    <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
-                                </li>
-                                <li>
-                                    <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
-                                </li>
-                                <li>
-                                    <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
-                                </li>
-                                <li>
-                                    <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class='mediaTopic'>
+                        <p class='mediaTopicSubject'>Tópico</p>
+                        <ul class='mediaTopicLength'>
+                            <li>
+                                <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
+                            </li>
+                            <li>
+                                <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
+                            </li>
+                            <li>
+                                <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
+                            </li>
+                            <li>
+                                <button class='buttonMediaTopicLength' onclick='goToOtherMediaTopicSection(this);'></button>
+                            </li>
+                        </ul>
+                    </div>
                     <div class='shelfContent'>
                         <button class='shelfDirections shelfDirectionLeft' onmousedown='moveShelfLeft();'><</button>
                         <ul id='mediaCarousel' class='mediaCarousel'>
