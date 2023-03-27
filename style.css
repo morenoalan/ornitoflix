@@ -384,7 +384,7 @@ header a {
     margin-top: 0;
     background-color: blue;
 }
-.shelfDirections button {
+.shelfDirections {
     height: 30vh;
     width: 5vh;
     font-family: var(--logo-font);
