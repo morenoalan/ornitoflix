@@ -375,6 +375,7 @@ header a {
     justify-content: flex-start;
     align-items: center;
 }
+/*
 .shelfDirections {
     display: flex;
     flex-direction: row;
@@ -400,6 +401,33 @@ header a {
 .shelfDirectionRight {
     position: absolute;
     margin-left: 0;
+}
+*/
+.shelfDirections {
+    background-color: transparent;
+    border: none;
+    height: var(--cover-height);
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    font-family: var(--first-font);
+    font-size: 50px;
+    color: #FFFFFF44;
+    font-weight: lighter;
+    transition: font-size 0.1s;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 100010 !important;
+}
+.shelfDirectionLeft {
+    left: 0;
+}
+.shelfDirectionRight {
+    right: 0;
 }
 .mediaCarousel {
     display: flex;
