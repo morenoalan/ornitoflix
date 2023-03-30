@@ -421,6 +421,8 @@ header a {
     cursor: pointer;
     outline: none;
     z-index: 100010 !important;
+    margin-top: -23vh;
+    
 }
 .shelfDirections:hover {
     background-color: #ffffff55;
