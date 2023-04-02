@@ -439,7 +439,7 @@ header a {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 1.5vh;
+    margin-left: 5vh;
 }
 .mediaCarousel > li {
     height: 22vh;
