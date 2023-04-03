@@ -216,7 +216,7 @@ header a {
 .menuProfile > li a {
     padding: 17px;
     color: white;
-    font-size: 14px;
+    font-size: 2.2vh;
     text-decoration: none;
     display: block;
 }
@@ -364,7 +364,7 @@ header a {
     margin-left: 6.5vh;
     margin-right: 6.5vh;
 }
-.mediaTopicSubject p {
+.mediaTopicSubject {
     font-family: var(--first-font);
     font-weight: 500;
     font-size: 2.2vh;
