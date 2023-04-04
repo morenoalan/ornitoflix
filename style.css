@@ -494,14 +494,14 @@ header a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
 }
 
 .floatingMascot {
     margin-top: -0.8em;
-    width:80px;
-    height:80px;
+    width:14vh;
+    height:14vh;
     -webkit-filter: drop-shadow(black -0.1em 0.25em 0.2em);
     filter: drop-shadow(black -0.1em 0.25em 0.2em);
     position: relative;
