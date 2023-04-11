@@ -155,6 +155,7 @@ main {
     font-family: var(--logo-font);
     font-size: 5vh;
     font-weight:lighter;
+    cursor: pointer;
 }
 
 #headerBarMenu {
