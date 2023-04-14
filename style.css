@@ -138,7 +138,7 @@ main {
     margin: 1vh 7vh 1vh 5vh;
     justify-content: center;
     align-items: center;
-    grid-gap: 3vh;
+    grid-gap: 2vh;
     vertical-align: baseline;
 }
 
@@ -191,7 +191,7 @@ header a {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 20px;
+    width: 3vh;
 }
 #headerBarSearchButton > svg {
     height: 7vh;
