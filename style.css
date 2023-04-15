@@ -58,7 +58,7 @@ body{
     overflow-x: hidden;
     font-family: var(--first-font), sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 3vh;
     color: var(--first-white-color);
 }
 
