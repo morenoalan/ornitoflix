@@ -182,9 +182,10 @@ header a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    grid-gap: 3px;
+    grid-gap: 1vh;
     float: right;
 }
+
 #headerBarSearchButton {
     display: flex;
     flex-direction: row;
@@ -200,12 +201,13 @@ header a {
     transform: scale(1.3);
 }
 
-#headerBarProfile > a {
+#headerBarProfile a {
     min-width: max-content;
     width: 40px;
     height: 40px;
     background-color: var(--first-green-color);
     border-radius: 50%;
+    font-size: 2vh;
     /*overflow: hidden;*/
 }
 .menuProfile {
