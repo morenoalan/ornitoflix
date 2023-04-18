@@ -207,7 +207,7 @@ header a {
     position: relative;
 }
 .menuProfile > li a {
-    padding: 17px;
+    padding: 2vh;
     color: white;
     font-size: 2.2vh;
     text-decoration: none;
