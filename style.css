@@ -273,10 +273,6 @@ header a {
     align-items: center;
     margin-top: 2vh;
     align-self: center;
-    /*
-    width: 728px;
-    height: 90px;
-    */
     width: 90vw;
     height: 40vh;
     border-radius: 2vh;
