@@ -364,34 +364,6 @@ header a {
     justify-content: flex-start;
     align-items: center;
 }
-/*
-.shelfDirections {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    margin-top: 0;
-    background-color: blue;
-}
-.shelfDirections {
-    height: 30vh;
-    width: 5vh;
-    font-family: var(--logo-font);
-    font-size: 10vh;
-    background-color: transparent;
-    color: #ffffff55;
-    cursor: pointer;
-}
-.shelfDirections button:hover {
-    background-color: #ffffff55;
-    color: #ffffff99;
-}
-.shelfDirectionRight {
-    position: absolute;
-    margin-left: 0;
-}
-*/
 .shelfDirections {
     background-color: transparent;
     border: none;
