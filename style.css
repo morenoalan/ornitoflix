@@ -236,7 +236,6 @@ header a {
     display: none;
     position: absolute;
     top: 50px;
-    /*left: 0;*/
     background: #3276fb;
     min-width: 110%;
 }
