@@ -435,11 +435,6 @@ header a {
 .mediaCover ol li:last-child {
     margin-left: 1vh;
 }
-/*
-.mediaCover figure {
-    height: 2vh;
-}
-*/
 .mediaCover figcaption {
     font-family: var(--first-font);
     font-size: 1.1vh;
